@@ -1,0 +1,95 @@
+generated: '2026-09-05'
+method: probed
+source: direct HTTPS probes, 2026-09-05
+name: Zapata Quantum well-known discovery probe
+summary: >-
+  Every named /.well-known/ path was probed on all three hosts this record knows. Nothing is served.
+  zapataquantum.com is a Webflow marketing site that answers every /.well-known/* path with a 404 HTML
+  page reading "Invalid .well-known path"; investors.zapataquantum.com sits behind an edge policy that
+  answers 403 "Access Denied" to a non-browser client on every path (the site itself is live and
+  returns 200 to a browser User-Agent on its root). No WellKnown, SecurityTxt, APICatalog or AgentCard
+  pointer is emitted, because none of these documents exists.
+hosts:
+- host: zapataquantum.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /security.txt
+    status: 404
+    file: null
+- host: www.zapataquantum.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: investors.zapataquantum.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+  - path: /.well-known/agent.json
+    status: 403
+    file: null
+retired_hosts:
+- host: zapatacomputing.com
+  note: 'Legacy company domain. Resolves (35.197.7.142) but returns HTTP 404 "Site Not Configured".'
+  status: 404
+- host: zapata.ai
+  note: 'Legacy Zapata AI brand domain. Resolves but the TLS handshake fails (sslv3 alert handshake failure).'
+  status: 0
+- host: docs.orquestra.io
+  note: 'Product documentation host still referenced by orquestra-sdk PyPI metadata. NXDOMAIN.'
+  status: 0
+result: no-documents-served

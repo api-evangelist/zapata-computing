@@ -1,0 +1,19 @@
+generated: '2026-09-05'
+method: none
+source: searched zapataquantum.com, github.com/zapatacomputing, github.com/zapata-engineering, PyPI
+name: Zapata Quantum MCP
+status: none
+summary: >-
+  No hosted or local MCP server exists for Zapata Quantum, and none can be derived: the company
+  publishes no OpenAPI, GraphQL, AsyncAPI or any other machine-readable contract from which a
+  candidate tool list could be built. Zapata's public NVIDIA "agentic AI for quantum algorithm
+  development" work is an internal research programme described in press material, not a callable
+  agent surface. No MCPServer pointer is wired into apis.yml, because nothing is served.
+deployment:
+  mode: none
+  endpoint: null
+  install: null
+  package: null
+  auth: unknown
+  verified: searched
+tools: []

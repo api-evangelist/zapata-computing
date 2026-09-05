@@ -1,0 +1,77 @@
+generated: '2026-09-05'
+method: searched
+source: https://github.com/zapata-engineering/orquestra-sdk/blob/main/projects/orquestra-sdk/src/orquestra/sdk/_client/_base/cli/_entry.py
+name: orq
+title: Orquestra Workflow SDK CLI
+description: >-
+  `orq` is the first-party command-line interface shipped by Zapata inside the orquestra-sdk Python
+  package. It submits and inspects Orquestra workflow runs locally and against remote Orquestra
+  Compute Engine clusters. It is the only first-party CLI Zapata publishes; there is no separate
+  binary release, homebrew tap or installer.
+entry_point: 'orq = "orquestra.sdk._client._base.cli._entry:dorq"'
+package: orquestra-sdk
+package_url: https://pypi.org/project/orquestra-sdk/
+version: 1.1.0
+released: '2024-10-04'
+license: Apache-2.0
+install:
+- method: pip
+  command: pip install "orquestra-sdk[all]"
+- method: pip
+  command: pip install orquestra-sdk
+command_groups:
+- group: workflow
+  aliases:
+  - wf
+  description: Commands related to workflow runs.
+  commands:
+  - name: submit
+    description: Submits a workflow for execution.
+  - name: view
+    description: Prints details of a single workflow run that was already submitted.
+  - name: graph
+    description: Generate a graph of a single workflow.
+  - name: results
+    aliases:
+    - outputs
+    description: Shows a preview of a workflow's output values.
+  - name: logs
+    description: Shows workflow, per-task and system-level logs for a workflow run.
+  - name: stop
+    description: Stops a running workflow.
+  - name: list
+    description: Lists workflow runs.
+- group: task
+  description: Commands related to individual task runs inside a workflow.
+  commands:
+  - name: results
+    aliases:
+    - outputs
+    description: Shows a task run's output values.
+  - name: logs
+    description: Shows a task run's logs.
+- group: login
+  description: Authenticate against a remote Orquestra cluster.
+  commands:
+  - name: auth
+    description: Default command — logs in to a named Orquestra server, optionally with a token.
+  - name: list
+    description: Lists stored login configurations.
+- group: services
+  description: Top-level commands managing the local execution services (Ray).
+  commands:
+  - name: up
+    description: Starts the local services required to run workflows.
+  - name: down
+    description: Stops the local services.
+  - name: restart
+    description: Restarts the local services.
+  - name: status
+    description: Reports the status of the local services.
+notes:
+- Extracted verbatim from the published click/cloup decorators in `_entry.py` on the `main` branch —
+  no command was inferred.
+- The CLI's remote mode targets a customer-specific Orquestra Compute Engine cluster URL passed with
+  `--config` / `--server`; Zapata publishes no fixed public API base URL and no OpenAPI for that
+  cluster API, so none is recorded here.
+- Last change to the CLI source is 2024-10-09, the day the company ceased operations.

@@ -1,17 +1,37 @@
 aid: zapata-computing
-name: Zapata Computing
-description: 'Zapata Computing is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: Zapata Quantum
+description: 'Zapata Quantum, Inc. (formerly Zapata Computing, and briefly Zapata AI) is a Boston-based,
+  hardware-agnostic quantum software company spun out of a Harvard quantum computing lab in 2017. It sells
+  enterprise engagements — use-case discovery, hardware-readiness assessment and quantum application
+  development across chemistry, optimization, simulation and machine learning — around its Orquestra
+  platform, and publishes the Orquestra Workflow SDK stack as Apache-2.0 open source. The company ceased
+  operations in October 2024 after a debt acceleration, restructured through 2025, and relaunched under the
+  Zapata Quantum name in 2026. It publishes no public API, developer portal, API reference or self-serve
+  signup; its only machine-readable developer surface is the Orquestra Python package stack on PyPI and the
+  `orq` CLI, both frozen at their October 2024 releases.'
+image: https://cdn.prod.website-files.com/68f2930870a8ae51b3d5b41b/68f5648b504a85f46118b931_zapata-fav256.png
 url: https://raw.githubusercontent.com/api-evangelist/zapata-computing/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-former-names:
+  previous:
+  - Zapata Computing, Inc.
+  - Zapata AI
+  current: Zapata Quantum, Inc.
+  renamed: '2026'
 specificationVersion: '0.20'
 created: '2026-09-05'
 modified: '2026-09-05'
 tags:
 - Company
+- Quantum Computing
+- Quantum Software
+- Artificial Intelligence
+- Scientific Computing
+- Workflow Orchestration
+- Enterprise Software
+- Open Source
+- Research
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +39,75 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/zapata-computing-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/zapata-computing_stock/
+  url: https://zapataquantum.com/
+- type: Support
+  url: https://zapataquantum.com/contact
+- type: TermsOfService
+  url: https://zapataquantum.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://zapataquantum.com/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/zapatacomputing
+- type: GitHubOrganization
+  url: https://github.com/zapata-engineering
+- type: SourceCode
+  url: https://github.com/zapata-engineering/orquestra-sdk
+- type: LinkedIn
+  url: https://www.linkedin.com/company/zapata-quantum/
+- type: InvestorRelations
+  url: https://investors.zapataquantum.com/
+- type: Careers
+  url: https://zapataquantum.com/careers
+- type: Solutions
+  url: https://zapataquantum.com/solutions
+- type: CaseStudies
+  url: https://zapataquantum.com/case-studies
+- type: x-ResearchPapers
+  url: https://zapataquantum.com/papers
+- type: x-Patents
+  url: https://zapataquantum.com/patents
+- type: Packages
+  url: packages/zapata-computing-packages.yml
+- type: SDKs
+  url: packages/zapata-computing-packages.yml
+- type: CLI
+  url: cli/zapata-computing-cli.yml
+- type: ChangeLog
+  url: changelog/zapata-computing-changelog.yml
+- type: Lifecycle
+  url: lifecycle/zapata-computing-lifecycle.yml
+- type: LLMsTxt
+  url: llms/zapata-computing-llms.txt
+- type: Plans
+  url: plans/zapata-computing-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/zapata-computing-rate-limits.yml
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 10
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Zapata Quantum sells the Orquestra platform as a delivered enterprise engagement — every call to
+    action on zapataquantum.com routes to /contact, there is no /docs, /developers or /pricing route,
+    and the only documentation host the company ever named, docs.orquestra.io, is now NXDOMAIN; the
+    Apache-2.0 Orquestra Python libraries on PyPI are research/workflow packages, not clients for any
+    API the company publishes.
+  evidence:
+  - url: https://zapataquantum.com/docs
+    status: 404
+  - url: https://zapataquantum.com/openapi.json
+    status: 404
+  - url: https://zapataquantum.com/.well-known/api-catalog
+    status: 404
+  - url: https://docs.orquestra.io/
+    status: 0
+  - url: https://zapataquantum.com/solutions
+    status: 200
+  checked: '2026-09-05'

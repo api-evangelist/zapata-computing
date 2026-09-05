@@ -1,0 +1,183 @@
+generated: '2026-09-05'
+method: searched
+source: https://pypi.org/ registry metadata (pypi.org/pypi/<pkg>/json) + https://github.com/zapata-engineering
+name: Zapata Quantum packages
+summary: >-
+  Zapata publishes no REST/GraphQL API and no API client SDKs. What it does publish is the Orquestra
+  open-source Python stack — a workflow DSL/runtime plus quantum-computing libraries — under Apache-2.0
+  on PyPI. Every entry below was confirmed first-party from the PyPI `author_email` field, which reads
+  "Zapata Computing Inc." <info@zapatacomputing.com> (orquestra-workflow-runtime reads info@zapata.ai,
+  the company's second brand). The whole stack is FROZEN: the newest release in the set is
+  2024-10-04, five days before the company ceased operations on 2024-10-09.
+official: true
+registries_checked:
+- pypi
+- npm
+- rubygems
+- crates.io
+- nuget
+- maven-central
+- pkg.go.dev
+- packagist
+notes:
+- npm has a package named `orquestra` (0.2.1) but it is an unrelated Brazilian TFS CLI published by
+  maintainer `prodamsp` with no link to Zapata — NOT included here.
+- The documentation URL declared in orquestra-sdk's PyPI project_urls, https://docs.orquestra.io, no
+  longer resolves (NXDOMAIN as of 2026-09-05). See lifecycle/zapata-computing-lifecycle.yml.
+packages:
+- name: orquestra-sdk
+  registry: pypi
+  language: python
+  official: true
+  version: 1.1.0
+  published: '2024-10-04'
+  release_count: 29
+  license: Apache-2.0
+  url: https://pypi.org/project/orquestra-sdk/
+  repository: https://github.com/zapata-engineering/orquestra-sdk
+  description: Compose Orquestra workflows using a Python DSL. Ships the `orq` CLI entry point.
+  first_party_evidence: 'PyPI author_email: "Zapata Computing Inc." <info@zapatacomputing.com>'
+- name: orquestra-workflow-shared
+  registry: pypi
+  language: python
+  official: true
+  version: 2.0.0
+  published: '2024-09-26'
+  license: Apache-2.0
+  url: https://pypi.org/project/orquestra-workflow-shared/
+  repository: https://github.com/zapata-engineering/orquestra-sdk
+  description: Shared models and schema for the Orquestra Workflow SDK and runtime.
+  first_party_evidence: 'PyPI author_email: "Zapata Computing Inc." <info@zapatacomputing.com>'
+- name: orquestra-workflow-runtime
+  registry: pypi
+  language: python
+  official: true
+  version: 2.0.0
+  published: '2024-09-26'
+  license: Apache-2.0
+  url: https://pypi.org/project/orquestra-workflow-runtime/
+  repository: https://github.com/zapata-engineering/orquestra-sdk
+  description: Local (Ray-backed) execution runtime for Orquestra workflows.
+  first_party_evidence: 'PyPI author_email: "Zapata Computing Inc." <info@zapata.ai>'
+- name: orquestra-cirq
+  registry: pypi
+  language: python
+  official: true
+  version: 0.13.0
+  published: '2024-08-14'
+  license: Apache-2.0
+  url: https://pypi.org/project/orquestra-cirq/
+  repository: https://github.com/zapata-engineering/orquestra-cirq
+  description: Orquestra integration for Google Cirq.
+  first_party_evidence: 'PyPI author_email: info@zapatacomputing.com'
+- name: benchq
+  registry: pypi
+  language: python
+  official: true
+  version: 0.7.0
+  published: '2024-04-17'
+  license: Apache-2.0
+  url: https://pypi.org/project/benchq/
+  repository: https://github.com/zapatacomputing/benchq
+  description: Resource estimation for fault-tolerant quantum computation.
+  first_party_evidence: 'PyPI author_email: info@zapatacomputing.com; repo in the zapatacomputing GitHub org'
+- name: orquestra-opt
+  registry: pypi
+  language: python
+  official: true
+  version: 0.10.0
+  published: '2023-12-18'
+  license: Apache-2.0
+  url: https://pypi.org/project/orquestra-opt/
+  repository: https://github.com/zapata-engineering/orquestra-opt
+  description: Orquestra optimization routines and interfaces.
+  first_party_evidence: 'PyPI author_email: info@zapatacomputing.com'
+- name: orquestra-vqa
+  registry: pypi
+  language: python
+  official: true
+  version: 0.9.0
+  published: '2023-12-18'
+  license: Apache-2.0
+  url: https://pypi.org/project/orquestra-vqa/
+  repository: https://github.com/zapata-engineering/orquestra-vqa
+  description: Variational quantum algorithm implementations for Orquestra.
+  first_party_evidence: 'PyPI author_email: info@zapatacomputing.com'
+- name: orquestra-qiskit
+  registry: pypi
+  language: python
+  official: true
+  version: 0.14.0
+  published: '2023-12-18'
+  license: Apache-2.0
+  url: https://pypi.org/project/orquestra-qiskit/
+  repository: https://github.com/zapata-engineering/orquestra-qiskit
+  description: Orquestra integration for IBM Qiskit.
+  first_party_evidence: 'PyPI author_email: info@zapatacomputing.com'
+- name: orquestra-quantum
+  registry: pypi
+  language: python
+  official: true
+  version: 0.12.0
+  published: '2023-10-19'
+  license: Apache-2.0
+  url: https://pypi.org/project/orquestra-quantum/
+  repository: https://github.com/zapata-engineering/orquestra-quantum
+  description: Core quantum operations library for Orquestra.
+  first_party_evidence: 'PyPI author_email: info@zapatacomputing.com'
+- name: orquestra-core
+  registry: pypi
+  language: python
+  official: true
+  version: 0.12.0
+  published: '2023-10-19'
+  license: Apache-2.0
+  url: https://pypi.org/project/orquestra-core/
+  repository: https://github.com/zapata-engineering/orquestra-core
+  description: Core Orquestra meta-package pulling in the quantum library set.
+  first_party_evidence: 'PyPI author_email: info@zapatacomputing.com'
+- name: orquestra-qulacs
+  registry: pypi
+  language: python
+  official: true
+  version: 0.8.0
+  published: '2023-10-19'
+  license: Apache-2.0
+  url: https://pypi.org/project/orquestra-qulacs/
+  repository: https://github.com/zapata-engineering/orquestra-qulacs
+  description: Orquestra integration for the Qulacs simulator.
+  first_party_evidence: 'PyPI author_email: info@zapatacomputing.com'
+- name: orquestra-braket
+  registry: pypi
+  language: python
+  official: true
+  version: 0.4.0
+  published: '2023-10-19'
+  license: Apache-2.0
+  url: https://pypi.org/project/orquestra-braket/
+  repository: https://github.com/zapata-engineering/orquestra-braket
+  description: Orquestra integration for Amazon Braket.
+  first_party_evidence: 'PyPI author_email: info@zapatacomputing.com'
+- name: orquestra-forest
+  registry: pypi
+  language: python
+  official: true
+  version: 0.6.0
+  published: '2023-10-19'
+  license: Apache-2.0
+  url: https://pypi.org/project/orquestra-forest/
+  repository: https://github.com/zapata-engineering/orquestra-forest
+  description: Orquestra integration for Rigetti Forest.
+  first_party_evidence: 'PyPI author_email: info@zapatacomputing.com'
+- name: orqviz
+  registry: pypi
+  language: python
+  official: true
+  version: 0.6.0
+  published: '2023-10-19'
+  license: Apache-2.0
+  url: https://pypi.org/project/orqviz/
+  repository: https://github.com/zapata-engineering/orqviz
+  description: Visualizing the loss landscape of parameterized quantum algorithms.
+  first_party_evidence: 'PyPI author_email: info@zapatacomputing.com'
+sdk_count: 14

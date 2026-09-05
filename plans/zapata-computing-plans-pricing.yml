@@ -1,0 +1,18 @@
+generated: '2026-09-05'
+method: searched
+source: https://zapataquantum.com/solutions
+name: Zapata Quantum plans and pricing
+plan_count: 0
+plans: []
+note: >-
+  Zapata Quantum publishes no pricing page and no plans. There is no /pricing route on
+  zapataquantum.com and no pricing link in the site navigation or footer. Every call to action on the
+  solutions and industries pages routes to https://zapataquantum.com/contact. The commercial model is
+  enterprise engagement — described on /solutions as "partner on Applications", "partner on IP
+  development" and "Partner on strategy", delivered as use-case validation, proofs of concept and IP
+  development projects. There is no self-serve signup, no free tier and no published rate card.
+probed:
+- url: https://zapataquantum.com/solutions
+  status: 200
+- url: https://zapataquantum.com/contact
+  status: 200

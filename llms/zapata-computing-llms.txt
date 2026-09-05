@@ -1,0 +1,90 @@
+# Zapata Quantum
+
+> Zapata Quantum, Inc. (formerly Zapata Computing, briefly Zapata AI) is a Boston-based,
+> hardware-agnostic quantum software company spun out of a Harvard quantum computing lab in 2017.
+> It sells enterprise engagements — use-case discovery, hardware-readiness assessment and quantum
+> application development across chemistry, optimization, simulation and machine learning — around
+> its Orquestra platform, and publishes the Orquestra Workflow SDK stack as Apache-2.0 open source.
+
+## Important for agents
+
+- **Zapata Quantum publishes no API.** There is no public REST, GraphQL, gRPC, SOAP, AsyncAPI or MCP
+  surface, no developer portal, no API reference, no API base URL, no sandbox and no self-serve
+  signup. Every commercial entry point is the contact form.
+- The only machine-readable developer surface is the **Orquestra Python package stack on PyPI** and
+  the **`orq` CLI** shipped inside `orquestra-sdk`. Both are Apache-2.0 and both are frozen: the
+  newest release across the whole 14-package stack is **2024-10-04**.
+- `orq` talks to a **customer-specific Orquestra Compute Engine cluster URL** supplied by the
+  operator at login time. There is no fixed public host.
+- The documentation host `docs.orquestra.io`, still declared on the live PyPI pages and in the SDK
+  README, **no longer resolves**.
+- Company history matters here: Zapata ceased operations on **2024-10-09** after a debt
+  acceleration, restructured through 2025, and relaunched as **Zapata Quantum** in 2026. The legacy
+  domains `zapatacomputing.com` (404) and `zapata.ai` (TLS failure) are dead.
+
+## Company
+
+- [Zapata Quantum](https://zapataquantum.com/): Company home.
+- [Solutions](https://zapataquantum.com/solutions): The Orquestra platform and the engagement model.
+- [Industries](https://zapataquantum.com/industries): Aerospace, chemicals, consumer goods, energy,
+  finance, government/defense, health/pharma, logistics, manufacturing, tech/media/telecom.
+- [Research](https://zapataquantum.com/research), [Papers](https://zapataquantum.com/papers),
+  [Patents](https://zapataquantum.com/patents)
+- [Case studies](https://zapataquantum.com/case-studies)
+- [Leadership](https://zapataquantum.com/leadership), [Advisors](https://zapataquantum.com/advisors)
+- [Careers](https://zapataquantum.com/careers)
+- [Contact](https://zapataquantum.com/contact): the only route to the product.
+- [Investor relations](https://investors.zapataquantum.com/): ticker ZPTA, OTCQB.
+
+## Source code
+
+- [github.com/zapata-engineering](https://github.com/zapata-engineering): the Orquestra package org
+  (13 repos) — `orquestra-sdk`, `orquestra-quantum`, `orquestra-opt`, `orquestra-vqa`, `orqviz`, and
+  the Cirq/Qiskit/Braket/Forest/Qulacs integrations.
+- [github.com/zapatacomputing](https://github.com/zapatacomputing): the research org (49 repos) —
+  `benchq` (fault-tolerant resource estimation), `qsub`, `qb-gsee-benchmark`, and the archived
+  z-quantum / Quantum Engine generation.
+- [orquestra-sdk](https://github.com/zapata-engineering/orquestra-sdk): the workflow SDK monorepo and
+  the `orq` CLI. Changelog:
+  [CHANGELOG.md](https://github.com/zapata-engineering/orquestra-sdk/blob/main/projects/orquestra-sdk/CHANGELOG.md)
+
+## Packages
+
+- [orquestra-sdk](https://pypi.org/project/orquestra-sdk/) — 1.1.0 (2024-10-04). `pip install "orquestra-sdk[all]"`
+- [orquestra-workflow-shared](https://pypi.org/project/orquestra-workflow-shared/) — 2.0.0 (2024-09-26)
+- [orquestra-workflow-runtime](https://pypi.org/project/orquestra-workflow-runtime/) — 2.0.0 (2024-09-26)
+- [orquestra-cirq](https://pypi.org/project/orquestra-cirq/) — 0.13.0 (2024-08-14)
+- [benchq](https://pypi.org/project/benchq/) — 0.7.0 (2024-04-17)
+- [orquestra-opt](https://pypi.org/project/orquestra-opt/) — 0.10.0 (2023-12-18)
+- [orquestra-vqa](https://pypi.org/project/orquestra-vqa/) — 0.9.0 (2023-12-18)
+- [orquestra-qiskit](https://pypi.org/project/orquestra-qiskit/) — 0.14.0 (2023-12-18)
+- [orquestra-quantum](https://pypi.org/project/orquestra-quantum/) — 0.12.0 (2023-10-19)
+- [orquestra-core](https://pypi.org/project/orquestra-core/) — 0.12.0 (2023-10-19)
+- [orquestra-qulacs](https://pypi.org/project/orquestra-qulacs/) — 0.8.0 (2023-10-19)
+- [orquestra-braket](https://pypi.org/project/orquestra-braket/) — 0.4.0 (2023-10-19)
+- [orquestra-forest](https://pypi.org/project/orquestra-forest/) — 0.6.0 (2023-10-19)
+- [orqviz](https://pypi.org/project/orqviz/) — 0.6.0 (2023-10-19)
+
+## CLI
+
+`orq` (shipped in `orquestra-sdk`):
+
+- `orq workflow submit | view | graph | results | logs | stop | list` (alias `orq wf`)
+- `orq task results | logs`
+- `orq login auth | list`
+- `orq up | down | restart | status`
+
+## Legal
+
+- [Terms and Conditions](https://zapataquantum.com/terms-and-conditions)
+- [Privacy Policy](https://zapataquantum.com/privacy-policy)
+
+## Optional
+
+- [LinkedIn](https://www.linkedin.com/company/zapata-quantum/)
+
+---
+generated: 2026-09-05
+method: generated
+source: apis.yml + repo artifacts (packages/, cli/, changelog/, lifecycle/) — no provider-published
+  llms.txt exists; https://zapataquantum.com/llms.txt returned 404.

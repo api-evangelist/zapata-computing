@@ -1,0 +1,18 @@
+generated: '2026-09-05'
+method: searched
+source: https://zapataquantum.com/, https://github.com/zapata-engineering/orquestra-sdk
+name: Zapata Quantum rate limits
+limit_count: 0
+limits: []
+response_headers: []
+note: >-
+  No rate limits are documented because Zapata Quantum publishes no public API. There is no developer
+  portal, no API reference and no documentation host to carry a limits page — docs.orquestra.io, the
+  only documentation host the company ever named, is NXDOMAIN. The Orquestra Workflow SDK talks to a
+  customer-specific Orquestra Compute Engine cluster whose limits, if any, are set per deployment and
+  are not published. This is an honest zero, not an unchecked field.
+probed:
+- url: https://zapataquantum.com/docs
+  status: 404
+- url: https://docs.orquestra.io/
+  status: 0

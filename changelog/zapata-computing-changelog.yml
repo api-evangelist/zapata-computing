@@ -1,0 +1,55 @@
+generated: '2026-09-05'
+method: searched
+source: https://github.com/zapata-engineering/orquestra-sdk/blob/main/projects/orquestra-sdk/CHANGELOG.md
+name: Orquestra Workflow SDK changelog
+subject: orquestra-sdk
+scheme: semver
+current_version: 1.1.0
+current_version_released: '2024-10-04'
+format: >-
+  A hand-maintained CHANGELOG.md in the repo, sectioned per release into Breaking Changes, Features,
+  Deprecations, Experimental, Bug Fixes, Improvements and Internal. GitHub releases are tagged
+  `orquestra-sdk-v<version>`.
+docs: https://github.com/zapata-engineering/orquestra-sdk/releases
+note: >-
+  This is the changelog for the open-source SDK, not for an API — Zapata publishes no API changelog
+  because it publishes no API. The changelog is stalled: the newest tagged release is 2024-10-04 and
+  an "Unreleased" section with breaking changes has sat unshipped since the company ceased operations
+  on 2024-10-09.
+entries:
+- version: Unreleased
+  date: null
+  breaking: true
+  highlights:
+  - '`workspace_id` is now required when submitting a workflow to remote clusters.'
+  - '`TaskDef`, `WorkflowDef` and `TaskInvocation` `__init__` functions now set parameters by default.'
+  - Removed the deprecated `project_dir` argument from all workflow-related functions.
+  - 'Feature: allow an int GPU count in task resources.'
+  - 'Bug fix: `orq wf logs` when the workflow emitted no logs.'
+  note: Never released. Carries unshipped breaking changes.
+- version: 1.1.0
+  date: '2024-10-04'
+  breaking: false
+  additions:
+  - '`workflow` decorator accepts an optional `head_node_image` parameter to select the head-node image.'
+- version: 1.0.0
+  date: '2024-09-30'
+  breaking: false
+  additions:
+  - 'New function `sdk.infer_git_ref` to infer git refs for Git Imports.'
+  - The SDK dependency is now explicitly added as a PythonImport to every submitted task, with the
+    version inferred from the local version at submission time.
+- version: 0.66.0
+  date: '2024-07-10'
+  breaking: true
+  highlights:
+  - 'Breaking: `ray` dependency updated to 2.30.0.'
+  - 'Deprecated: `migrate_config_file`.'
+  - 'Deprecated: `WorkflowDef.run()` on CE without specifying a workspace.'
+  - 'Fix: orquestra-runtime / Ray is no longer required for SDK usage.'
+- version: 0.65.0
+  date: '2024-06-21'
+  breaking: null
+- version: 0.64.0
+  date: '2024-05-14'
+  breaking: null

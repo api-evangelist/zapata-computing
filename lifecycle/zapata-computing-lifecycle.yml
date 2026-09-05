@@ -1,0 +1,77 @@
+generated: '2026-09-05'
+method: searched
+source: https://github.com/zapata-engineering/orquestra-sdk, https://pypi.org/project/orquestra-sdk/, https://zapataquantum.com/, https://investors.zapataquantum.com/
+name: Zapata Quantum lifecycle
+summary: >-
+  Zapata publishes no API, so there is no API versioning policy, no deprecation policy, no Sunset /
+  Deprecation header contract, no SLA and no status page. What lifecycle signal does exist belongs to
+  the Orquestra open-source stack and to the company itself, and both are material: the company
+  ceased operations on 2024-10-09 and the entire Orquestra package stack stopped there.
+api_versioning:
+  scheme: null
+  note: No public API surface exists, so nothing is versioned as an API.
+package_versioning:
+  scheme: semver
+  current_version: 1.1.0
+  subject: orquestra-sdk
+  released: '2024-10-04'
+  note: >-
+    Every Orquestra package uses semver and each release is tagged in GitHub as
+    `orquestra-sdk-v<version>`. Newest release across the whole 14-package stack is 2024-10-04.
+deprecation_policy:
+  published: false
+  note: >-
+    No provider-published deprecation or sunset policy. The orquestra-sdk CHANGELOG.md does carry a
+    dedicated "🧟 Deprecations" section per release (e.g. v0.66.0 deprecated `migrate_config_file`
+    and `WorkflowDef.run()` on CE without a workspace), which is a per-release deprecation NOTICE,
+    not a policy with a stated window. No Deprecation pointer is emitted.
+status_page:
+  published: false
+  probed:
+  - url: https://status.zapataquantum.com
+    status: 0
+    note: NXDOMAIN
+  note: No status page exists. No StatusPage pointer is emitted.
+sla:
+  published: false
+  note: Engagements are enterprise contracts; no public SLA document.
+dead_surfaces:
+- url: https://docs.orquestra.io
+  status: 0
+  note: >-
+    NXDOMAIN. Still declared as the Documentation project_url on the live orquestra-sdk PyPI page and
+    linked from the repo README — a consumer installing the current SDK is pointed at documentation
+    that no longer resolves.
+- url: https://zapatacomputing.com/
+  status: 404
+  note: 'Legacy company domain returns "Site Not Configured | 404 Not Found".'
+- url: https://zapata.ai/
+  status: 0
+  note: Legacy Zapata AI brand domain fails the TLS handshake.
+- url: https://github.com/zapata-engineering/orquestra-sdk
+  status: 200
+  note: >-
+    Repo is live, but the PyPI Homepage/Repository URLs for orquestra-quantum, orquestra-opt and
+    orquestra-vqa still point at github.com/zapatacomputing/<pkg>, which now 301-redirects to the
+    zapata-engineering org.
+company_events:
+- date: '2024-10-09'
+  event: ceased-operations
+  note: >-
+    Zapata AI ceased operations after Sandia Investment Management LP accelerated repayment of
+    approximately $2.5M of debt. Nearly all staff were laid off. Nasdaq suspended trading in ZPTA
+    stock and warrants on 2024-10-25.
+  source: https://quantumcomputingreport.com/zapata-ai-ceases-operations/
+- date: '2026-04-23'
+  event: restructuring-complete
+  note: >-
+    Zapata Quantum, Inc. completed an oversubscribed $15M strategic financing led by Triatomic
+    Capital, capping a year-long restructuring; the company regained SEC reporting status and listed
+    on OTCQB in June 2026.
+  source: https://thequantuminsider.com/2026/04/23/zapata-quantum-completes-oversubscribed-15-million-strategic-financing-capping-successful-restructuring/
+- date: '2026-09-05'
+  event: observed
+  note: >-
+    Company relaunched at zapataquantum.com under the Zapata Quantum name; the GitHub org
+    `zapatacomputing` now carries display name "Zapata Quantum" and email info@zapataquantum.com and
+    was last updated 2026-08-24. No Orquestra package has been republished since 2024-10-04.
