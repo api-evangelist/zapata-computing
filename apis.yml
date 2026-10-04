@@ -9,6 +9,21 @@ description: 'Zapata Quantum, Inc. (formerly Zapata Computing, and briefly Zapat
   Zapata Quantum name in 2026. It publishes no public API, developer portal, API reference or self-serve
   signup; its only machine-readable developer surface is the Orquestra Python package stack on PyPI and the
   `orq` CLI, both frozen at their October 2024 releases.'
+deliveryModel:
+  model: saas
+  license_evidence:
+    not_product:
+    - zapata-engineering/orquestra-sdk
+  open_source: unknown
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: low
+  source:
+  - pricing
+  - repository-not-product
+  generated: '2026-09-25'
+  method: derived
 image: https://cdn.prod.website-files.com/68f2930870a8ae51b3d5b41b/68f5648b504a85f46118b931_zapata-fav256.png
 url: https://raw.githubusercontent.com/api-evangelist/zapata-computing/refs/heads/main/apis.yml
 x-type: company
@@ -30,7 +45,7 @@ tags:
 - Scientific Computing
 - Workflow Orchestration
 - Enterprise Software
-- Open-Source
+- Open Source
 - Research
 tags_raw:
 - Company
@@ -42,6 +57,7 @@ tags_raw:
 - Enterprise Software
 - Open Source
 - Research
+- Open-Source
 apis: []
 maintainers:
 - FN: Kin Lane
